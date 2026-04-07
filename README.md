@@ -52,7 +52,7 @@ int main()
    printf("Enter the received hash (in hex): "); 
    scanf("%s", receivedHash); 
    unsigned int receivedHashValue; 
-   scanf(receivedHash, "%02x", &receivedHashValue); 
+   sscanf(receivedHash, "%02x", &receivedHashValue); 
    if (hash == receivedHashValue) 
    { 
    printf("Hash verification successful. Message is unchanged.\n"); 
